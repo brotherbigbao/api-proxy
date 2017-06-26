@@ -1,0 +1,21 @@
+cinema_list:
+  path: /movie/v3/cinemas
+  method: get
+  params:
+    - order
+    - name
+    - status
+  cache: 300
+movie_list:
+  path: /movie/v2/movies
+  method: get
+  cache: 300
+news_add:
+  path: /news
+  method: post
+news_update:
+  path: /news/(\d+)
+  method: post
+news_delete:
+  path: /news/(\d+)
+  method: delete
